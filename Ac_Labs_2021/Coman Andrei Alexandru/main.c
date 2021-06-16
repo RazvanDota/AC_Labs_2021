@@ -1,3 +1,5 @@
+#include "letters.h"
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
@@ -67,6 +69,25 @@ void Sobel(unsigned char* in, unsigned char* out, int width, int height) {
     return;
 }
 
+/*
+    This function put the name on the input image(in)
+    The signature will be created starting from startWidth and startHeigth
+    The size of the signature is stored in "size"
+    The signature is "ALEX C."
+*/
+void fillName(unsigned char* in, int startWidth, int width, int startHeigth, int size) {
+
+    int* pix = (int*)malloc(10 * sizeof(int));
+
+    letterA(in, startWidth, width, startHeigth, size, pix);
+    letterL(in, startWidth + size * 6 + 5, width, startHeigth, size, pix);
+    letterE(in, startWidth + 2 * (size * 6 + 5), width, startHeigth, size, pix);
+    letterX(in, startWidth + 3 * (size * 6 + 5), width, startHeigth, size, pix);
+
+    letterC(in, startWidth + 5 * (size * 6 + 5), width, startHeigth, size, pix);
+    point(in, startWidth + 6 * (size * 6 + 5), width, startHeigth, size, pix);
+}
+
 void main() {
     // Input and output files for images
     FILE* inputImage;
@@ -108,6 +129,9 @@ void main() {
 
     // Application of the Sobel algoritm
     Sobel(inputBuffer, outputBuffer, WIDTH, HEIGHT);
+
+    //Putting the signature on the image
+    fillName(outputBuffer, 1700, WIDTH, 20, 4);
 
     // We save the results from the outputBuffer in the output file, which represents the final image
     fwrite(outputBuffer, 1, sizeof(unsigned char) * WIDTH * HEIGHT, outputImage);
