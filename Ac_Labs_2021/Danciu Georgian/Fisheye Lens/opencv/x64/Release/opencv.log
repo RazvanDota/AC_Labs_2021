@@ -1,0 +1,46 @@
+﻿  opencv.cpp
+C:\GitRepo1\fisheye-lens\opencv\opencv.cpp(44,22): warning C4244: '=': conversion from 'double' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=float
+          ]
+C:\GitRepo1\fisheye-lens\opencv\opencv.cpp(45,22): warning C4244: '=': conversion from 'double' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=float
+          ]
+C:\GitRepo1\fisheye-lens\opencv\opencv.cpp(57,28): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\GitRepo1\fisheye-lens\opencv\opencv.cpp(58,17): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\GitRepo1\fisheye-lens\opencv\opencv.cpp(59,18): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\GitRepo1\fisheye-lens\opencv\opencv.cpp(64,23): warning C4244: '=': conversion from 'double' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=float
+          ]
+C:\GitRepo1\fisheye-lens\opencv\opencv.cpp(65,23): warning C4244: '=': conversion from 'double' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=float
+          ]
+C:\GitRepo1\fisheye-lens\opencv\opencv.cpp(66,17): warning C4244: '=': conversion from 'double' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=float
+          ]
+C:\GitRepo1\fisheye-lens\opencv\opencv.cpp(72,27): warning C4244: '=': conversion from 'double' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=float
+          ]
+C:\GitRepo1\fisheye-lens\opencv\opencv.cpp(73,27): warning C4244: '=': conversion from 'double' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=float
+          ]
+C:\GitRepo1\fisheye-lens\opencv\opencv.cpp(104,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  Generating code
+  3 of 117 functions ( 2.6%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  opencv.vcxproj -> C:\GitRepo1\fisheye-lens\x64\Release\opencv.exe
